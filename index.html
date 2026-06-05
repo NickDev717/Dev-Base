@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projeto experimental Starbucks - Design responsivo e interativo.">
-  <title>Starbucks|NickDev Project</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Base</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="circulo" aria-hidden="true"></div>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Dev Base</h1>
+            <div class="search-wrapper">
+                <input type="text" id="campoBusca" placeholder="Buscar tecnologias, ferramentas, frameworks..." autocomplete="off">
+                <button id="botaoBusca" class="btn-search">Buscar</button>
+            </div>
+            <nav class="nav-links">
+                <a href="https://github.com/NickDev717/Dev-Base" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+                <a href="https://www.alura.com.br/" target="_blank" rel="noopener noreferrer">Alura</a>
+            </nav>
+        </div>
+    </header>
 
-  <header class="container header">
-    <img src="img\logo.png" 
-         alt="Logo Starbucks" class="toplogo" width="80" height="80" loading="eager">
-  </header>
+    <main class="main-content">
+        <div id="cardContainer" class="card-container"></div>
+    </main>
 
-  <main class="container hero">
-    <div class="caixa-textos">
-      <h1>It's not just Coffee... <span>It's Starbucks</span></h1>
-      <p>Descubra o equilíbrio perfeito entre qualidade, conforto e comunidade. Cada xícara é uma experiência única, preparada com paixão e precisão. Cada monento se torna único e emocionante ao lado das pessoas que você ama. Com a ajuda do Dev Defaull7 esse site te entrega e apresenta nossa essência.</p>
-      <div class="btn-group">
-        <button 
-          onclick="window.open('https://www.starbucks.com.br/', '_blank', 'noopener,noreferrer')"
-          class="btn btn-primary" id="btn-comprar" type="button">Buy a Coffee
-        </button>
-        <a href="#" 
-          onclick="window.open('https://github.com/nickdev717', '_blank', 'noopener,noreferrer')"
-          class="btn btn-dev" id="btn-dev" aria-label="Créditos do desenvolvedor">Dev by NickDev</a>
-      </div>
-    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="footer-location">Dev Base © 2026</span>
+            <ul class="footer-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    <div class="caixa-imagem">
-      <img src="img\img1.png" 
-           alt="Xícara Starbucks em destaque" class="copao" id="imagem-principal" width="400" height="500" loading="eager">
-    </div>
-  </main>
-
-  <section class="container menu-opcoes" aria-label="Seleção de temas">
-    <button class="copinho" type="button" data-img="img/img1.png" data-color="#017143" aria-label="Tema Verde Clássico">
-      <img src="img/img1.png" alt="Opção 1" loading="lazy">
-    </button>
-    <button class="copinho" type="button" data-img="img/img2.png" data-color="#eb7495" aria-label="Tema Marrom Café">
-      <img src="img/img2.png" alt="Opção 2" loading="lazy">
-    </button>
-    <button class="copinho" type="button" data-img="img/img3.png" data-color="#d752b1" aria-label="Tema Caramelo">
-      <img src="img/img3.png" alt="Opção 3" loading="lazy">
-    </button>
-  </section>
-
-  <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
